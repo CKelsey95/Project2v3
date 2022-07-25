@@ -1,11 +1,11 @@
-package project2;
+//package project2;
 import java.util.Scanner;
 
 import java.io.IOException;
 
 public class Colton_Kelsey_Report {
     public static void main(String[] args)throws IOException{
-        Colton_Kelsey_Amortization amortization = new Colton_Kelsey_Amortization(5000, 5.9, 1);
+        Colton_Kelsey_Amortization amortization = new Colton_Kelsey_Amortization(0, 0, 0);
 
 
         Scanner amount = new Scanner(System.in); // sets up scanner
@@ -21,11 +21,11 @@ public class Colton_Kelsey_Report {
         System.out.println("Please enter your years of the loan: ");
         int loanYears = amount.nextInt();
         amortization.setLoanYears(loanYears);
-
+        
         amortization.saveReport();
 
 
-        
+        // need to add statement that when balance = 0 ask user to go again
 
 
     }
